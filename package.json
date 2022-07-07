@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "icons:generate": "lerna run --scope @qvant/qui-icons-svg generate",
+    "icons:build": "lerna run --scope @qvant/qui-icons-svg build",
+    "icons:test": "lerna run --scope @qvant/qui-icons-svg test",
+    "lint": "lerna run lint"
+  },
+  "devDependencies": {
+    "@qvant/prettier-config": "^0.1.0",
+    "lerna": "^3.4.0"
+  },
+  "license": "Apache-2.0"
+}
