@@ -38,7 +38,7 @@ export const base: SVGO.Options = {
     { moveElemsAttrsToGroup: true },
     { moveGroupAttrsToElems: true },
     { collapseGroups: true },
-    { removeRasterImages: false },
+    { removeRasterImages: true },
     { mergePaths: true },
     { convertShapeToPath: true },
     { sortAttrs: true },
