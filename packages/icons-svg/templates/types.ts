@@ -11,4 +11,4 @@ export interface IconDefinition {
 }
 
 export type ThemeType = 'filled' | 'outlined';
-export type ThemeTypeUpperCase = 'Filled' | 'Outlined';
+export type CapitalizedThemeType = Capitalize<ThemeType>;
