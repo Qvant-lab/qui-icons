@@ -1,4 +1,4 @@
-import { createTrasformStream } from '../creator';
+import { createTransformStream } from '../creator';
 import { ThemeType, AbstractNode } from '../../templates/types';
 import {
   pipe,
@@ -54,7 +54,7 @@ export const svg2Definition = ({
   extraNodeTransformFactories,
   stringify
 }: SVG2DefinitionOptions) =>
-  createTrasformStream((SVGString, { stem: name }) =>
+  createTransformStream((SVGString, { stem: name }) =>
     applyTo(SVGString)(
       pipe(
         // 0. The SVG string is like that:
@@ -87,7 +87,7 @@ export const svg2Definition = ({
         pipe(
           // @todo: "defaultTo" is not the best way to deal with the type Maybe<Element>
           get<Element>(['children', 0]),
-          defaultTo(({} as any) as Element)
+          defaultTo({} as any as Element)
         ),
 
         // 2. The element node is with the JSON shape:
