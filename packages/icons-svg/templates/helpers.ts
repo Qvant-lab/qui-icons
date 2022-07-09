@@ -1,9 +1,7 @@
 import { IconDefinition, AbstractNode } from './types';
 
 export interface HelperRenderOptions {
-  extraSVGAttrs?: {
-    [key: string]: string;
-  };
+  extraSVGAttrs?: Record<string, string>;
 }
 
 export function renderIconDefinitionToSVGElement(

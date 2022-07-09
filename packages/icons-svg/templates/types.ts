@@ -1,8 +1,6 @@
 export interface AbstractNode {
   tag: string;
-  attrs: {
-    [key: string]: string;
-  };
+  attrs: Record<string, string>;
   children?: AbstractNode[];
 }
 

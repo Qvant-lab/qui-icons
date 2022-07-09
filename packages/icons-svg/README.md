@@ -51,9 +51,7 @@ export declare type ThemeType = 'filled' | 'outlined';
 
 export interface AbstractNode {
   tag: string;
-  attrs: {
-    [key: string]: string;
-  };
+  attrs: Record<string, string>;
   children?: AbstractNode[];
 }
 
@@ -88,8 +86,6 @@ declare function renderIconDefinitionToSVGElement(
 ): string;
 
 interface HelperRenderOptions {
-  extraSVGAttrs?: {
-    [key: string]: string;
-  };
+  extraSVGAttrs?: Record<string, string>;
 }
 ```
